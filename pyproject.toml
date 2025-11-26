@@ -24,7 +24,7 @@ testing = [
     # watertap.flowsheets currently required to be able to run tests
     # requirements in pyproject.toml cannot use git+https://... URLs
     # or PyPI upload will fail
-    "watertap",
+    "watertap @ git+https://github.com/dallan-keylogic/watertap.git@new_scaling_changes",
 ]
 
 [project.entry-points.pytest11]
