@@ -20,11 +20,11 @@ dependencies = [
 [project.optional-dependencies]
 testing = [
     "pytest >= 8",
-    "idaes-pse",
+    "idaes-pse @ git+https://github.com/IDAES/idaes-pse.git@2.10.0rc0",
     # watertap.flowsheets currently required to be able to run tests
     # requirements in pyproject.toml cannot use git+https://... URLs
     # or PyPI upload will fail
-    "watertap @ git+https://github.com/dallan-keylogic/watertap.git@new_scaling_changes",
+    "watertap @ git+https://github.com/watertap-org/watertap@refs/pull/1695/merge",
 ]
 
 [project.entry-points.pytest11]
